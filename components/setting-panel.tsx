@@ -121,6 +121,7 @@ export function SettingPanel() {
                 providerName: providerName ?? '',
                 modelName: modelName ?? '',
               })
+              window.location.reload()
               toast.success('设置已保存')
             }}
           >
