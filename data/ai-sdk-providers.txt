@@ -1,0 +1,52 @@
+xAI Grok,grok-3				
+xAI Grok,grok-3-fast				
+xAI Grok,grok-3-mini				
+xAI Grok,grok-3-mini-fast				
+xAI Grok,grok-2-1212				
+xAI Grok,grok-2-vision-1212				
+xAI Grok,grok-beta				
+xAI Grok,grok-vision-beta				
+OpenAI,gpt-4.1				
+OpenAI,gpt-4.1-mini				
+OpenAI,gpt-4.1-nano				
+OpenAI,gpt-4o				
+OpenAI,gpt-4o-mini				
+OpenAI,gpt-4-turbo				
+OpenAI,gpt-4				
+OpenAI,o1				
+OpenAI,o1-mini				
+OpenAI,o1-preview				
+Anthropic,claude-3-7-sonnet-20250219				
+Anthropic,claude-3-5-sonnet-20241022				
+Anthropic,claude-3-5-sonnet-20240620				
+Anthropic,claude-3-5-haiku-20241022				
+Groq,meta-llama/llama-4-scout-17b-16e-instruct				
+Groq,deepseek-r1-distill-llama-70b				
+Groq,llama-3.3-70b-versatile				
+Groq,llama-3.1-8b-instant				
+Groq,mistral-saba-24b				
+Groq,qwen-qwq-32b				
+Groq,mixtral-8x7b-32768				
+Groq,gemma2-9b-it				
+DeepInfra,meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8				
+DeepInfra,meta-llama/Llama-4-Scout-17B-16E-Instruct				
+DeepInfra,meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo				
+DeepInfra,meta-llama/Llama-3.3-70B-Instruct				
+DeepInfra,deepseek-ai/DeepSeek-V3				
+DeepInfra,deepseek-ai/DeepSeek-R1				
+DeepInfra,deepseek-ai/DeepSeek-R1-Distill-Llama-70B				
+DeepInfra,deepseek-ai/DeepSeek-R1-Turbo				
+Mistral,pixtral-large-latest				
+Mistral,mistral-large-latest				
+Mistral,mistral-small-latest				
+Mistral,pixtral-12b-2409				
+Google Generative AI,gemini-2.0-flash-exp				
+Google Generative AI,gemini-1.5-flash				
+Google Generative AI,gemini-1.5-pro				
+Google Vertex,gemini-2.0-flash-exp				
+Google Vertex,gemini-1.5-flash				
+Google Vertex,gemini-1.5-pro				
+DeepSeek,deepseek-chat				
+DeepSeek,deepseek-reasoner				
+Cerebras,llama3.1-8b				
+Cerebras,llama3.3-70b
