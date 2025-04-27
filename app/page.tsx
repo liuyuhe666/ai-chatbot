@@ -1,5 +1,5 @@
 import type { ChatbotItem } from '@/types/chatbot'
-import { buttonVariants } from '@/components/ui/button'
+import AnimatedSvgCard from '@/components/animated-svg-card'
 import data from '@/data/chatbot.json'
 import { ArrowRight } from 'lucide-react'
 import Link from 'next/link'
@@ -12,14 +12,15 @@ export default async function Home() {
         {
           chatbotList.map((item) => {
             return (
-              <div key={item.id} className="rounded-lg p-8 shadow-sm border flex flex-col items-center hover:shadow-md transition-shadow duration-200">
-                <h3 className="text-xl font-bold mb-2">{item.name}</h3>
-                <p className="text-muted-foreground mb-2 text-sm">{item.description}</p>
-                <Link href={`/chatbot/${item.id}`} className={buttonVariants({ variant: 'link' })}>
-                  开始使用
-                  <ArrowRight />
-                </Link>
-              </div>
+              <Link href={`/chatbot/${item.id}`} key={`${item.name}-${item.id}`}>
+                <div className="cursor-pointer rounded-lg flex flex-col items-center md:border">
+                  <AnimatedSvgCard titleSize="text-2xl" titleText={item.name} width={350} height={120} />
+                  <div className="w-full flex flex-row items-center justify-center gap-2 py-4">
+                    <p className="text-muted-foreground hover:underline">{item.description}</p>
+                    <ArrowRight className="size-4" />
+                  </div>
+                </div>
+              </Link>
             )
           })
         }
