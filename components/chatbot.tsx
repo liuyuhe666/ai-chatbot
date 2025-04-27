@@ -12,6 +12,7 @@ import { Button } from '@/components/ui/button'
 import { SETTING_KEY } from '@/constants/chatbot'
 import { useChat } from '@ai-sdk/react'
 import { Bot, Rocket, User } from 'lucide-react'
+import Markdown from 'react-markdown'
 import { useLocalStorage } from 'react-use'
 import { toast } from 'sonner'
 import LoadingButton from './loading-button'
@@ -64,7 +65,11 @@ export default function Chatbot({ chatbot }: { chatbot: ChatbotItem }) {
                     {message.parts.map((part, index) => {
                       switch (part.type) {
                         case 'text':
-                          return <div key={`${message.id}-${index}`} className="p-2 bg-card rounded-lg shadow-sm border">{part.text}</div>
+                          return (
+                            <div key={`${message.id}-${index}`} className="p-2 bg-card rounded-lg shadow-sm border">
+                              <Markdown>{part.text}</Markdown>
+                            </div>
+                          )
                       }
                     })}
                     <Button variant="outline" size="icon"><User /></Button>
@@ -79,7 +84,11 @@ export default function Chatbot({ chatbot }: { chatbot: ChatbotItem }) {
                     {message.parts.map((part, index) => {
                       switch (part.type) {
                         case 'text':
-                          return <div key={`${message.id}-${index}`} className="p-2 bg-card rounded-lg shadow-lg border">{part.text}</div>
+                          return (
+                            <div key={`${message.id}-${index}`} className="p-2 bg-card rounded-lg shadow-lg border">
+                              <Markdown>{part.text}</Markdown>
+                            </div>
+                          )
                       }
                     })}
                   </div>
