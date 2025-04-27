@@ -1,5 +1,5 @@
 import type { ChatbotItem } from '@/types/chatbot'
-import AnimatedSvgCard from '@/components/animated-svg-card'
+import AnimatedSvgCard from '@/components/animated-card'
 import data from '@/data/chatbot.json'
 import { ArrowRight } from 'lucide-react'
 import Link from 'next/link'
@@ -13,8 +13,8 @@ export default async function Home() {
           chatbotList.map((item) => {
             return (
               <Link href={`/chatbot/${item.id}`} key={`${item.name}-${item.id}`}>
-                <div className="cursor-pointer rounded-lg flex flex-col items-center md:border">
-                  <AnimatedSvgCard titleSize="text-2xl" titleText={item.name} width={350} height={120} />
+                <div className="cursor-pointer rounded-lg flex flex-col items-center border">
+                  <AnimatedSvgCard titleSize="text-2xl" titleText={item.name} />
                   <div className="w-full flex flex-row items-center justify-center gap-2 py-4">
                     <p className="text-muted-foreground hover:underline">{item.description}</p>
                     <ArrowRight className="size-4" />
@@ -24,6 +24,15 @@ export default async function Home() {
             )
           })
         }
+        <Link href="/">
+          <div className="cursor-pointer rounded-lg flex flex-col items-center border">
+            <AnimatedSvgCard titleSize="text-2xl" titleText="更多功能" />
+            <div className="w-full flex flex-row items-center justify-center gap-2 py-4">
+              <p className="text-muted-foreground hover:underline">敬请期待</p>
+              <ArrowRight className="size-4" />
+            </div>
+          </div>
+        </Link>
       </div>
     </div>
   )
