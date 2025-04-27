@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI Chatbot
 
-## Getting Started
+![Stars](https://img.shields.io/github/stars/liuyuhe666/ai-chatbot)![Forks](https://img.shields.io/github/forks/liuyuhe666/ai-chatbot)![GitHub License](https://img.shields.io/github/license/liuyuhe666/ai-chatbot)
 
-First, run the development server:
+> 🔞 多功能 AI 聊天机器人，支持多个 [AI 模型](https://github.com/liuyuhe666/ai-chatbot/blob/main/data/ai-sdk-providers.txt)
+
+<table>
+    <tr>
+        <td><img src="./assets/Snipaste_2025-04-27_12-04-07.png" alt="preview" /></td>
+        <td><img src="./assets/Snipaste_2025-04-27_12-04-21.png" alt="preview" /></td>
+    </tr>
+</table>
+
+在线体验：[https://ai-chatbot-beta-ten-83.vercel.app](https://ai-chatbot-beta-ten-83.vercel.app)
+
+## 🧑‍💻 安装和运行
+
+- 安装依赖
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm i
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- 本地开发
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+pnpm dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 😎 定制
 
-## Learn More
+`fork` 该项目，修改 `data/chatbot.json`
 
-To learn more about Next.js, take a look at the following resources:
+```json
+[
+  {
+    "id": 1,
+    "name": "",
+    "description": "",
+    "prompt": ""
+  }
+]
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📖 许可
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+[GNU General Public License v3.0](https://github.com/liuyuhe666/ai-chatbot/blob/main/LICENSE)
 
-## Deploy on Vercel
+## 🌹 支持
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+如果你喜欢这个项目或发现有用，可以点右上角 [`Star`](https://github.com/liuyuhe666/ai-chatbot) 支持一下，你的支持是我们不断改进的动力，感谢！ ^_^
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📚 参考资料
+
+- [https://github.com/PlexPt/awesome-chatgpt-prompts-zh](https://github.com/PlexPt/awesome-chatgpt-prompts-zh)
+- [https://sdk.vercel.ai](https://sdk.vercel.ai)
