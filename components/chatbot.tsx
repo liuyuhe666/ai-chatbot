@@ -12,10 +12,10 @@ import { Button } from '@/components/ui/button'
 import { SETTING_KEY } from '@/constants/chatbot'
 import { useChat } from '@ai-sdk/react'
 import { Bot, Rocket, User } from 'lucide-react'
-import Markdown from 'react-markdown'
 import { useLocalStorage } from 'react-use'
 import { toast } from 'sonner'
 import LoadingButton from './loading-button'
+import MarkdownPreview from './markdown-preview'
 import { Textarea } from './ui/textarea'
 
 export default function Chatbot({ chatbot }: { chatbot: ChatbotItem }) {
@@ -67,7 +67,7 @@ export default function Chatbot({ chatbot }: { chatbot: ChatbotItem }) {
                         case 'text':
                           return (
                             <div key={`${message.id}-${index}`} className="p-2 bg-card rounded-lg shadow-sm border">
-                              <Markdown>{part.text}</Markdown>
+                              <MarkdownPreview content={part.text} />
                             </div>
                           )
                       }
@@ -86,7 +86,7 @@ export default function Chatbot({ chatbot }: { chatbot: ChatbotItem }) {
                         case 'text':
                           return (
                             <div key={`${message.id}-${index}`} className="p-2 bg-card rounded-lg shadow-lg border">
-                              <Markdown>{part.text}</Markdown>
+                              <MarkdownPreview content={part.text} />
                             </div>
                           )
                       }
