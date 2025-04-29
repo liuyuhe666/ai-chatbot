@@ -1,17 +1,14 @@
-# AI Chatbot
+![ai-chatbot](https://socialify.git.ci/liuyuhe666/ai-chatbot/image?font=Inter&forks=1&issues=1&language=1&name=1&owner=1&pattern=Circuit+Board&pulls=1&stargazers=1&theme=Auto)
 
-![Stars](https://img.shields.io/github/stars/liuyuhe666/ai-chatbot)![Forks](https://img.shields.io/github/forks/liuyuhe666/ai-chatbot)![GitHub License](https://img.shields.io/github/license/liuyuhe666/ai-chatbot)
-
-> 🔞 多功能 AI 聊天机器人，支持多个 [AI 模型](https://github.com/liuyuhe666/ai-chatbot/blob/main/data/ai-sdk-providers.txt)
-
-<table>
-    <tr>
-        <td><img src="./assets/Snipaste_2025-04-27_12-04-07.png" alt="preview" /></td>
-        <td><img src="./assets/Snipaste_2025-04-27_12-04-21.png" alt="preview" /></td>
-    </tr>
-</table>
+> 基于 Next.js 开发的多功能 AI 聊天机器人，支持多个 [AI 模型](https://github.com/liuyuhe666/ai-chatbot/blob/main/data/ai-sdk-providers.txt)，内置多种应用场景。
 
 在线体验：[https://ai-chatbot-beta-ten-83.vercel.app](https://ai-chatbot-beta-ten-83.vercel.app)
+
+## 🧩 截图
+
+![preview](./assets/Snipaste_2025-04-27_12-04-07.png)
+
+![preview](./assets/Snipaste_2025-04-27_12-04-21.png)
 
 ## 🧑‍💻 安装和运行
 
