@@ -22,7 +22,6 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select'
-import { Toggle } from '@/components/ui/toggle'
 import { SETTING_KEY } from '@/constants/chatbot'
 import { Settings } from 'lucide-react'
 import { useState } from 'react'
@@ -49,9 +48,9 @@ export function SettingPanel() {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Toggle aria-label="设置">
+        <Button variant="outline" size="icon">
           <Settings className="size-4" />
-        </Toggle>
+        </Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>

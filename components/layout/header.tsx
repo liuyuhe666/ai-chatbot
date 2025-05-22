@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import GitHubButton from '../github-button'
 import { SettingPanel } from '../setting-panel'
 import { ThemeToggle } from '../theme-toggle'
 
@@ -19,6 +20,7 @@ export function Header() {
           </Link>
         </div>
         <div className="flex items-center gap-2">
+          <GitHubButton link="https://github.com/liuyuhe666/ai-chatbot" />
           <ThemeToggle />
           <SettingPanel />
         </div>
