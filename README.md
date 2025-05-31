@@ -6,9 +6,12 @@
 
 ## 🧩 截图
 
-![preview](./assets/Snipaste_2025-04-27_12-04-07.png)
-
-![preview](./assets/Snipaste_2025-04-27_12-04-21.png)
+<table>
+<tr>
+<td><img src="./assets/screenshot-rocks1.png" alt="preview"></td>
+<td><img src="./assets/screenshot-rocks2.png" alt="preview"></td>
+</tr>
+</table>
 
 ## 🧑‍💻 安装和运行
 
