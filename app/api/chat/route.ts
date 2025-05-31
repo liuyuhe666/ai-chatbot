@@ -9,52 +9,23 @@ import { createOpenAI } from '@ai-sdk/openai'
 import { createXai } from '@ai-sdk/xai'
 import { streamText } from 'ai'
 
+type ProviderFactory = (config: { apiKey: string }) => (modelName: string) => any
+
+const providerMap: Record<string, ProviderFactory> = {
+  'OpenAI': createOpenAI,
+  'xAI Grok': createXai,
+  'Anthropic': createAnthropic,
+  'Groq': createGroq,
+  'DeepInfra': createDeepInfra,
+  'Mistral': createMistral,
+  'Google Generative AI': createGoogleGenerativeAI,
+  'Cerebras': createCerebras,
+  'DeepSeek': createDeepSeek,
+}
+
 function getModel(apiKey: string, providerName: string, modelName: string) {
-  if (providerName === 'OpenAI') {
-    return createOpenAI({
-      apiKey,
-    })(modelName)
-  }
-  else if (providerName === 'xAI Grok') {
-    return createXai({
-      apiKey,
-    })(modelName)
-  }
-  else if (providerName === 'Anthropic') {
-    return createAnthropic({
-      apiKey,
-    })(modelName)
-  }
-  else if (providerName === 'Groq') {
-    return createGroq({
-      apiKey,
-    })(modelName)
-  }
-  else if (providerName === 'DeepInfra') {
-    return createDeepInfra({
-      apiKey,
-    })(modelName)
-  }
-  else if (providerName === 'Mistral') {
-    return createMistral({
-      apiKey,
-    })(modelName)
-  }
-  else if (providerName === 'Google Generative AI') {
-    return createGoogleGenerativeAI({
-      apiKey,
-    })(modelName)
-  }
-  else if (providerName === 'Cerebras') {
-    return createCerebras({
-      apiKey,
-    })(modelName)
-  }
-  else {
-    return createDeepSeek({
-      apiKey,
-    })(modelName)
-  }
+  const createProvider = providerMap[providerName] || providerMap.DeepSeek
+  return createProvider({ apiKey })(modelName)
 }
 
 export const maxDuration = 30
