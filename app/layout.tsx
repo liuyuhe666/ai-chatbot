@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Layout from '@/components/layout/layout'
 import { ThemeProvider } from '@/components/theme-provider'
 import { Toaster } from '@/components/ui/sonner'
+import { GoogleAnalytics } from '@next/third-parties/google'
 import { Geist, Geist_Mono } from 'next/font/google'
 import './globals.css'
 
@@ -52,6 +53,7 @@ export default function RootLayout({
           <Toaster position="top-center" richColors />
         </ThemeProvider>
       </body>
+      <GoogleAnalytics gaId="G-H054VMX4XQ" />
     </html>
   )
 }
