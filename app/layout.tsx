@@ -17,7 +17,19 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: 'AI 聊天机器人',
-  description: '多功能 AI 聊天机器人',
+  description: '🤖 基于 Next.js 开发的多功能 AI 聊天机器人，支持多个 AI 模型，内置多种应用场景。',
+  keywords: ['AI 聊天机器人', 'Next.js', '多功能 AI', '聊天机器人', 'AI 模型'],
+  authors: [{ name: 'LiuYuhe', url: 'https://github.com/liuyuhe666' }],
+  creator: 'LiuYuhe',
+  publisher: 'Vercel',
+  openGraph: {
+    type: 'website',
+    url: 'https://ai-chatbot-beta-ten-83.vercel.app',
+    title: 'AI 聊天机器人',
+    description: '🤖 基于 Next.js 开发的多功能 AI 聊天机器人，支持多个 AI 模型，内置多种应用场景。',
+    siteName: 'AI 聊天机器人',
+    images: [{ url: '/og.png' }],
+  },
 }
 
 export default function RootLayout({
