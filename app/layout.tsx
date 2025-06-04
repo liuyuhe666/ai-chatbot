@@ -23,6 +23,7 @@ export const metadata: Metadata = {
   authors: [{ name: 'LiuYuhe', url: 'https://github.com/liuyuhe666' }],
   creator: 'LiuYuhe',
   publisher: 'Vercel',
+  verification: { google: '_6gkNnCmuXU34dFfANRP5lv8DAGplNNihumUucIdm7o' },
   openGraph: {
     type: 'website',
     url: 'https://ai-chatbot-beta-ten-83.vercel.app',
