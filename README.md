@@ -54,3 +54,7 @@ pnpm dev
 
 - [https://github.com/PlexPt/awesome-chatgpt-prompts-zh](https://github.com/PlexPt/awesome-chatgpt-prompts-zh)
 - [https://sdk.vercel.ai](https://sdk.vercel.ai)
+
+## 🚧 Repobeats
+
+![Repobeats analytics image](https://repobeats.axiom.co/api/embed/c318854748869876ec3561423c7b6b28f73a88d5.svg)
