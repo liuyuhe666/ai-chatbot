@@ -8,7 +8,7 @@ import Link from 'next/link'
 
 export default function Faq() {
   return (
-    <Accordion type="single" collapsible className="w-full">
+    <Accordion type="single" collapsible className="w-full" id="faq">
       <AccordionItem value="item-1">
         <AccordionTrigger>AI 聊天机器人对生成的内容没有限制吗 ？</AccordionTrigger>
         <AccordionContent>
